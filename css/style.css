@@ -39,6 +39,13 @@ body {
   font-weight: 400;
   color: #ddd;
 }
+.box {
+  width: 1300px;
+  margin: auto;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* hero */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .section-hero {
   height: 80vh;
   background-image: url(/img/gym_photo.jpg);
@@ -54,7 +61,7 @@ body {
   grid-column: 1/2;
 }
 .primary-heading {
-  font-size: 8.6rem;
+  font-size: 7.2rem;
   padding: 0 2.4rem;
   margin-bottom: 1.2rem;
   line-height: 1.8;
@@ -88,19 +95,61 @@ body {
   border: #ddd solid 2px;
   margin-left: 2.4rem;
   border-radius: 9px;
+  text-align: center;
+  height: 5.6rem;
+  color: #ddd;
 }
 .btn--full:link,
 .btn--full:visited {
   background-color: #ddd;
   color: #000;
+  transition: all 0.3s;
 }
 
 .btn--full:hover,
 .btn--full:active {
   background-color: #111;
   border-radius: 9px;
+  color: #ddd;
 }
 .icon {
   margin-left: 1rem;
   font-size: 1.5rem;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*nav*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.section-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.4rem 1.8rem 0 1.8rem;
+  border-bottom: #ddd solid 2px;
+}
+.logo {
+  height: 7.4rem;
+  padding: 0;
+}
+/* 52 / 62 / 74  */
+.main-nav {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 2.4rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  background-color: #ddd;
+  border-radius: 9px;
+  color: #111;
 }
