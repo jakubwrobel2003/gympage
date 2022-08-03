@@ -43,28 +43,35 @@ body {
   width: 1300px;
   margin: auto;
 }
+.grid-2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* hero */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .section-hero {
-  height: 80vh;
+  height: 100vh;
   background-image: url(/img/gym_photo.jpg);
   background-size: cover;
   background-position: center;
-  padding-top: 9.6rem;
+
+  padding: 9.6rem 0;
   display: grid;
-  grid-template-columns: 3fr 4fr;
-  grid-row: auto 1fr;
+  grid-template-columns: 4fr 5fr;
+  grid-row: auto auto;
+  margin-bottom: 9.6rem;
 }
 .hero-text-box {
   padding: 2.4rem 4.8rem;
   grid-column: 1/2;
 }
 .primary-heading {
-  font-size: 7.2rem;
+  font-size: 6.2rem;
   padding: 0 2.4rem;
   margin-bottom: 1.2rem;
   line-height: 1.8;
+  font-weight: 500;
 }
 .secondary-heading {
   font-size: 3rem;
@@ -152,4 +159,37 @@ body {
   background-color: #ddd;
   border-radius: 9px;
   color: #111;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*about*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.section-about {
+  margin-bottom: 9.6rem;
+}
+.about-heading {
+  border-left: red solid 5px;
+}
+.about-text-box {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 2.4rem;
+}
+.subheading-about {
+  text-transform: uppercase;
+}
+.about-img {
+  height: 30rem;
+  justify-self: center;
+  font-weight: 500;
+  padding: 2.4rem;
+}
+.about-grid {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 4.8rem;
+}
+.left-about-img {
+  height: 45rem;
 }
