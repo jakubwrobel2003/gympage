@@ -31,7 +31,8 @@
 
 html {
   font-size: 62.5%;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -39,13 +40,65 @@ body {
   font-weight: 400;
   color: #ddd;
 }
+.box-small {
+  width: 900px;
+}
 .box {
   width: 1300px;
   margin: auto;
+  margin-bottom: 9.6rem;
+}
+.box-plus {
+  width: 1500px;
+  margin: auto;
+  margin-bottom: 9.6rem;
 }
 .grid-2--cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.button-box {
+  padding: 4.8rem 2.4rem;
+  display: flex;
+
+  justify-content: space-around;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: #ddd solid 2px;
+
+  border-radius: 9px;
+  text-align: center;
+  height: 5.6rem;
+  color: #ddd;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #ddd;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #111;
+  border-radius: 9px;
+  color: #ddd;
+}
+.white-box {
+  background-color: #fff;
+}
+.red-box {
+  background-color: red;
 }
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* hero */
@@ -63,7 +116,7 @@ body {
   margin-bottom: 9.6rem;
 }
 .hero-text-box {
-  padding: 2.4rem 4.8rem;
+  padding: 4.8rem 2.4rem;
   grid-column: 1/2;
 }
 .primary-heading {
@@ -85,40 +138,7 @@ body {
   font-size: 2.4rem;
   letter-spacing: 0.75px;
 }
-.hero-button-box {
-  padding: 2.4rem 4.8rem;
-}
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1.6rem 2.4rem;
-  cursor: pointer;
-  font-family: inherit;
-  text-transform: uppercase;
-  border: #ddd solid 2px;
-  margin-left: 2.4rem;
-  border-radius: 9px;
-  text-align: center;
-  height: 5.6rem;
-  color: #ddd;
-}
-.btn--full:link,
-.btn--full:visited {
-  background-color: #ddd;
-  color: #000;
-  transition: all 0.3s;
-}
 
-.btn--full:hover,
-.btn--full:active {
-  background-color: #111;
-  border-radius: 9px;
-  color: #ddd;
-}
 .icon {
   margin-left: 1rem;
   font-size: 1.5rem;
@@ -177,12 +197,17 @@ body {
 }
 .subheading-about {
   text-transform: uppercase;
+  padding: 2.4rem;
+  border-bottom: red solid 3px;
+  margin-bottom: 1.8rem;
 }
 .about-img {
-  height: 30rem;
+  height: 35rem;
   justify-self: center;
+  align-items: center;
   font-weight: 500;
   padding: 2.4rem;
+  margin-top: 3rem;
 }
 .about-grid {
   grid-template-columns: 2fr 1fr;
@@ -192,4 +217,65 @@ body {
 }
 .left-about-img {
   height: 45rem;
+}
+.about-btn {
+  gap: 9.6rem;
+  justify-content: center;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*descriopion*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.color-back {
+  width: 100vh;
+  background-color: #fff;
+}
+.description-box {
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem;
+}
+
+.description-text {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 3.6rem;
+}
+.description-text-black {
+  color: #000;
+}
+.description-text-white {
+  color: #fff;
+}
+.red-box {
+  background-color: red;
+}
+.description-btn {
+  background-color: red;
+  font-size: 2.4rem;
+}
+.description-btn:link,
+.description-btn:visited {
+  background-color: red;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.description-btn:hover,
+.description-btn:active {
+  background-color: rgb(248, 68, 68);
+}
+.red-box:last-child {
+  padding-bottom: 9.6rem;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*coaches*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.section-coaches {
+  padding: 9.6rem;
+}
+.coaches-heading {
+  color: #000;
+  border-left: red solid 5px;
 }
