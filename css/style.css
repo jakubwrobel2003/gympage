@@ -40,6 +40,9 @@ body {
   font-weight: 400;
   color: #ddd;
 }
+strong {
+  font-weight: 500;
+}
 .box-small {
   width: 900px;
 }
@@ -52,6 +55,9 @@ body {
   width: 1500px;
   margin: auto;
   margin-bottom: 9.6rem;
+}
+.box-mar-bot-0 {
+  margin-bottom: 0rem;
 }
 .grid-2--cols {
   display: grid;
@@ -278,4 +284,75 @@ body {
 .coaches-heading {
   color: #000;
   border-left: red solid 5px;
+}
+.img_couches {
+  padding: 9.6rem;
+  width: 90%;
+  z-index: 2;
+}
+.Coaches-text-box {
+  padding: 3rem;
+  background-color: #ddd;
+  transform: translate(-30%, 140%);
+  height: 40%;
+  box-shadow: 1px -11px 42px -28px rgba(0, 0, 0, 0.228);
+  position: relative;
+  z-index: 3;
+}
+.Coaches-text-box-left {
+  transform: translate(30%, 140%);
+}
+
+.couches-grid-row {
+  grid-template-rows: 1fr 5rem;
+}
+.red-heading {
+  color: red;
+  font-size: 3.6rem;
+}
+.black-text {
+  color: #111;
+}
+.subheading-couches {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0 2.4rem 2.4rem 2.4rem;
+}
+.list-couches {
+  list-style: none;
+  padding: 0 2.4rem 2.4rem 2.4rem;
+  font-size: 1.8rem;
+}
+.list-couches li {
+  padding: 5px;
+}
+.black-box {
+  grid-column: 1/-1;
+  height: 30rem;
+  width: 200%;
+  background-color: #000;
+  transform: translate(-30%, -90%);
+  z-index: 1;
+}
+.couch-bio-btn:link,
+.couch-bio-btn:visited {
+  font-size: 1.8rem;
+  color: red;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+  transition: all 0.3s;
+}
+.couch-bio-btn:hover,
+.couch-bio-btn:active {
+  border-bottom: 2px solid red;
+}
+.couch-icon {
+  align-self: center;
+  margin-right: 0.5rem;
+  font-size: 1.8rem;
+}
+.btn-box {
+  padding: 0 2.4rem 2.4rem 2.4rem;
 }
