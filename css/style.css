@@ -329,7 +329,7 @@ strong {
 .black-box {
   grid-column: 1/-1;
   height: 30rem;
-  width: 200%;
+  width: 300%;
   background-color: #000;
   transform: translate(-30%, -90%);
   z-index: 1;
