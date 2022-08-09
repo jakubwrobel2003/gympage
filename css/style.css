@@ -199,6 +199,7 @@ strong {
 }
 .about-heading {
   border-left: red solid 5px;
+  margin: 4.8rem 0;
 }
 .about-text-box {
   font-size: 1.8rem;
@@ -368,13 +369,12 @@ strong {
 .section-galery {
   padding: 4.8rem 2.4rem 2.4rem 2.4rem;
   background-color: #000;
+  margin-bottom: 9.6rem;
 }
 .galery-box {
   margin-top: 9.6rem;
   grid-row-gap: 2.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   grid-column-gap: 2.4rem;
 }
 .galery-img {
@@ -392,4 +392,75 @@ strong {
 }
 .gallery-item {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*OTD*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.section-OTD {
+  padding: 4.8rem;
+  margin-bottom: 9.6rem;
+}
+.OTD-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  flex-direction: column;
+}
+.OTD-subheading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 1.2;
+  padding: 2.4rem;
+}
+
+.OTD-box {
+  padding: 2.4rem;
+  border: red solid 3px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.8rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  width: 50rem;
+}
+.OTD-box:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 40px 8px rgba(255, 31, 0, 1);
+  background-color: #222;
+}
+
+.OTD-titles {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1.8rem;
+}
+.OTD-text {
+  font-size: 1.8rem;
+  padding: 1.8rem;
+}
+.OTD-icon-left {
+  color: red;
+  height: 2.4rem;
+  width: 2.4rem;
+  justify-self: center;
+  align-self: center;
+  margin-right: 1.8rem;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*DTP*/
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.secondary-DTP {
+  padding: 4.8rem;
+  margin-bottom: 9.6rem;
+}
+.subheading-DTP {
+  font-size: 2.4rem;
+  color: #333;
+  padding: 2.4rem;
+  margin: 2.4rem 0;
 }
