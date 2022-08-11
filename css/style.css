@@ -51,6 +51,7 @@ strong {
   margin: auto;
   margin-bottom: 9.6rem;
 }
+
 .box-plus {
   width: 1600px;
   margin: auto;
@@ -451,16 +452,83 @@ strong {
   align-self: center;
   margin-right: 1.8rem;
 }
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-/*DTP*/
+/*FOOTER*/
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-.secondary-DTP {
-  padding: 4.8rem;
-  margin-bottom: 9.6rem;
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.subheading-DTP {
+.footer-logo img {
+  width: 20%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border-bottom: 2px red solid;
+}
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-subheading {
+  color: red;
+  padding: 2.4rem 0;
   font-size: 2.4rem;
-  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer-icon {
+  height: 3rem;
+  width: 3rem;
+
+  padding: 0 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer-icon:hover {
+  color: red;
+  transform: scale(1.3);
+}
+.link-footer {
+  content: "";
+  color: red;
+  font-size: 1.8rem;
+  padding: 1.8rem 0;
+}
+.dates-more {
   padding: 2.4rem;
-  margin: 2.4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.4rem 0;
+}
+
+.heading-footer {
+  color: #ddd;
+  padding: 3rem;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+footer {
+  border-top: 2px #ddd solid;
+  padding: 2.4rem;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-top: auto;
+  padding: 1.8rem;
 }
