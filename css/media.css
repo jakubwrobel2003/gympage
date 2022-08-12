@@ -1,9 +1,30 @@
 /**************************/
-/* BELOW 1344px (Smaller desktops) */
+/* BELOW 1500px (Smaller desktops) */
 /**************************/
+@media (max-width: 97em) {
+  html {
+    font-size: 50%;
+  }
+  .galery-box {
+    grid-row-gap: 1.8rem;
 
+    grid-column-gap: 1.8rem;
+  }
+  .galery-img {
+    width: 70%;
+  }
+  .box {
+    width: 1fr;
+  }
+}
 /**************************/
-/* BELOW 944px (Tablets) */
+/* BELOW 1300px (Tablets) */
 /**************************/
-@media (max-width: 59em) {
+@media (max-width: 81em) {
+  html {
+    font-size: 50%;
+  }
+  .galery-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

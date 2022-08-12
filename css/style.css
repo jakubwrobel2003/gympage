@@ -32,7 +32,7 @@
 html {
   font-size: 62.5%;
   background-color: rgb(0, 0, 0);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -53,7 +53,7 @@ strong {
 }
 
 .box-plus {
-  width: 1600px;
+  width: 1500px;
   margin: auto;
   margin-bottom: 9.6rem;
 }
@@ -115,8 +115,8 @@ strong {
 /* hero */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .section-hero {
-  height: 100vh;
-  background-image: url(/img/gym_photo.jpg);
+  width: 1300px;
+  background-image: url(/img/gym_photo.webp);
   background-size: cover;
   background-position: center;
 
@@ -160,18 +160,20 @@ strong {
 .section-nav {
   display: flex;
   justify-content: space-around;
-  padding: 2.4rem 1.8rem 0 1.8rem;
+  align-items: center;
+  padding: 2.4rem 1.8rem 2.4rem 1.8rem;
   border-bottom: #ddd solid 2px;
 }
 .logo {
-  height: 7.4rem;
+  height: 6.4rem;
   padding: 0;
 }
-/* 52 / 62 / 74  */
+
 .main-nav {
   list-style: none;
   display: flex;
   align-items: flex-end;
+
   gap: 4.8rem;
 }
 .main-nav-link:link,
@@ -203,6 +205,7 @@ strong {
   margin: 4.8rem 0;
 }
 .about-text-box {
+  width: 100%;
   font-size: 1.8rem;
   line-height: 1.6;
   padding: 2.4rem;
@@ -213,22 +216,28 @@ strong {
   border-bottom: red solid 3px;
   margin-bottom: 1.8rem;
 }
-.about-img {
-  height: 35rem;
+.about-img-box {
+  display: flex;
   justify-self: center;
   align-items: center;
-  font-weight: 500;
+}
+
+.about-img {
+  width: 70%;
+
   padding: 2.4rem;
   margin-top: 3rem;
 }
 .about-grid {
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 1fr;
-  grid-column-gap: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 1.8rem;
   grid-row-gap: 4.8rem;
 }
 .left-about-img {
-  height: 45rem;
+  width: 100%;
 }
 .about-btn {
   gap: 9.6rem;
@@ -293,7 +302,7 @@ strong {
 }
 .img_couches {
   padding: 9.6rem;
-  width: 90%;
+  width: 100%;
   z-index: 2;
 }
 .Coaches-text-box {
@@ -310,7 +319,7 @@ strong {
 }
 
 .couches-grid-row {
-  grid-template-rows: 1fr 5rem;
+  grid-template-rows: 1fr;
 }
 .red-heading {
   color: red;
@@ -372,15 +381,19 @@ strong {
   background-color: #000;
   margin-bottom: 9.6rem;
 }
+.galery-heading {
+  margin: 2.4rem;
+}
 .galery-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 9.6rem;
   grid-row-gap: 2.4rem;
-
+  margin: 0 2.4rem;
   grid-column-gap: 2.4rem;
 }
 .galery-img {
-  width: 45rem;
-  padding: 1rem;
+  width: 80%;
 }
 .gallery-item img {
   display: block;
