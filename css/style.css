@@ -301,8 +301,8 @@ strong {
   border-left: red solid 5px;
 }
 .img_couches {
-  padding: 9.6rem;
-  width: 100%;
+  padding: 7.2rem;
+  width: 90%;
   z-index: 2;
 }
 .Coaches-text-box {
@@ -321,6 +321,7 @@ strong {
 .couches-grid-row {
   grid-template-rows: 1fr;
 }
+
 .red-heading {
   color: red;
   font-size: 3.6rem;
@@ -397,7 +398,7 @@ strong {
 }
 .gallery-item img {
   display: block;
-
+  width: 70%;
   transition: all 0.4s;
 }
 

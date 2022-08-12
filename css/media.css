@@ -27,4 +27,10 @@
   .galery-box {
     grid-template-columns: repeat(2, 1fr);
   }
+  .galery-img {
+    width: 60%;
+  }
+  .about-text-box {
+    width: 80%;
+  }
 }
