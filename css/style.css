@@ -161,7 +161,7 @@ strong {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2.4rem 1.8rem 2.4rem 1.8rem;
+
   border-bottom: #ddd solid 2px;
 }
 .logo {
@@ -194,6 +194,41 @@ strong {
   color: #111;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .section-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*about*/
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
