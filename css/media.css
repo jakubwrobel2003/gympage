@@ -16,6 +16,21 @@
   .box {
     width: 1fr;
   }
+  .section-coaches {
+    padding: 8.2rem;
+  }
+  .img_couches {
+    width: 70%;
+  }
+  .Coaches-text-box {
+    transform: translate(-0%, 0%);
+  }
+  .Coaches-text-box-left {
+    transform: translate(0%, 0%);
+  }
+  .about-text-box {
+    width: 70%;
+  }
 }
 /**************************/
 /* BELOW 1300px (Tablets) */
@@ -32,5 +47,49 @@
   }
   .about-text-box {
     width: 80%;
+  }
+  .section-coaches {
+    padding: 4.8rem 8.2rem;
+  }
+  .img_couches {
+    padding: 0;
+  }
+
+  .Coaches-text-box {
+    width: 1fr;
+  }
+  .about-text-box {
+    width: 70%;
+  }
+
+  .section-hero {
+    width: 70%;
+  }
+}
+/**************************/
+/* BELOW 1000px (Tablets) */
+/**************************/
+@media (max-width: 62em) {
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .Coaches-text-box {
+    height: 100%;
+    margin: 2.4rem;
+  }
+  .img_couches {
+    margin: 2.4rem;
+  }
+  .section-hero {
+    margin: auto;
+  }
+  .main-nav {
+    gap: 3rem;
   }
 }

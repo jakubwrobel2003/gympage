@@ -205,10 +205,14 @@ strong {
   margin: 4.8rem 0;
 }
 .about-text-box {
-  width: 100%;
+  width: 90%;
   font-size: 1.8rem;
   line-height: 1.6;
   padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .subheading-about {
   text-transform: uppercase;
@@ -218,19 +222,16 @@ strong {
 }
 .about-img-box {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
 }
 
 .about-img {
   width: 70%;
-
-  padding: 2.4rem;
-  margin-top: 3rem;
 }
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
   grid-template-columns: 3fr 5fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 1.8rem;
@@ -300,26 +301,33 @@ strong {
   color: #000;
   border-left: red solid 5px;
 }
+
 .img_couches {
   padding: 7.2rem;
-  width: 90%;
+  width: 50rem;
   z-index: 2;
+  margin-left: 2.4rem;
 }
 .Coaches-text-box {
   padding: 3rem;
   background-color: #ddd;
-  transform: translate(-30%, 140%);
-  height: 40%;
+  height: 40rem;
   box-shadow: 1px -11px 42px -28px rgba(0, 0, 0, 0.228);
   position: relative;
+  transform: translate(0%, 0%);
   z-index: 3;
 }
 .Coaches-text-box-left {
-  transform: translate(30%, 140%);
+  transform: translate(0%, 0%);
 }
-
+.couches-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2.4rem;
+}
 .couches-grid-row {
-  grid-template-rows: 1fr;
+  width: 80%;
 }
 
 .red-heading {
@@ -372,7 +380,11 @@ strong {
 .btn-box {
   padding: 0 2.4rem 2.4rem 2.4rem;
 }
-
+.couch-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+*/
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*galery*/
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
