@@ -69,7 +69,12 @@
 /**************************/
 /* BELOW 1000px (Tablets) */
 /**************************/
+
 @media (max-width: 62em) {
+  .section-hero {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
   .about-grid {
     display: flex;
     flex-direction: column;
@@ -158,10 +163,7 @@
   html {
     font-size: 45%;
   }
-  .section-hero {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
+
   .hero-text-box {
     display: flex;
     justify-content: center;
